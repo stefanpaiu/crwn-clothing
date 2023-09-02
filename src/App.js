@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./components/routes/home/home.component";
-import Navigation from "./components/routes/navigation/navigation.component";
-import SignIn from "./components/routes/sign-in/sign-in.component";
+import Home from "./routes/home/home.component";
+import Navigation from "./routes/navigation/navigation.component";
+import SignIn from "./routes/sign-in/sign-in.component";
 
 const Shop = () => {
   return <h1>Hello from this side.</h1>;
@@ -19,5 +19,7 @@ const App = () => {
     </Routes>
   );
 };
+
+// Lesson 96
 
 export default App;
