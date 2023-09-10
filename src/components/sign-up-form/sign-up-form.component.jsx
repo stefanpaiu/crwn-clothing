@@ -43,7 +43,6 @@ const SignUpForm = () => {
         email,
         password
       );
-      console.log(user);
 
       // Creates the UserDoc
       await createUserDocumentFromAuth(user, { displayName });
