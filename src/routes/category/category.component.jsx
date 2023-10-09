@@ -12,7 +12,9 @@ const Category = () => {
 
   const { categoriesMap } = useContext(CategoriesContext);
 
-  const [products, setProducts] = useState([categoriesMap[category]]);
+  const [products, setProducts] = useState(categoriesMap[category]);
+
+  console.log(categoriesMap[category]);
 
   useEffect(() => {
     setProducts(categoriesMap[category]);
@@ -20,8 +22,6 @@ const Category = () => {
 
   return (
     <div className="category-container">
-      {/* products is a safe guard since we get them asynchronously,
-     so they are not rendered yet */}
       {products &&
         products.map((product) => (
           <ProductCard key={product.id} product={product} />
